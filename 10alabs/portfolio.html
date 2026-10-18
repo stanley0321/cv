@@ -1,4 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive"><style>body{margin:0}[hidden]{display:none!important}</style></head><body><title>Kyle Yun Case Files</title>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="author" content="Donghwan Yun">
+<style>body{margin:0}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Donghwan Yun | Investigations</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Fira+Code:wght@400;500;600&family=Fira+Sans:wght@400;500;600&display=swap">
 <style id="kstyle">
 /* Layout: one landscape case sheet per decision. Story on the left with a process strip, evidence on the right (headline number + two charts). Swiss grid, one accent. */
@@ -146,606 +156,203 @@ svg .lab { fill: var(--ink); font-weight: 600 }
 <script type="application/json" id="kdata">
 {
   "cover": {
-    "eyebrow": "Marketing analytics portfolio · 2026",
+    "eyebrow": "Investigations portfolio · 2026",
     "name": "Donghwan (Kyle) Yun",
-    "role": "Data Scientist (Senior Specialist) · Marketing analytics",
-    "lede": "I figure out where marketing money actually pays off, and move it there.",
+    "role": "Data Scientist (Senior Specialist) · Risk and abuse investigations",
+    "lede": "I find the pattern a bad actor leaves in the data, and write up what to do about it.",
     "contact": [
       "yun090914@gmail.com",
-      "Manila, Philippines · remote"
+      "Manila, Philippines · APAC hours"
     ],
     "steps": [
       {
-        "b": "Check the number first",
-        "s": "Rebuild it customer by customer."
+        "b": "Start from the loss",
+        "s": "Trace it back account by account."
       },
       {
-        "b": "Compare fairly",
-        "s": "Cost and revenue on the same customers."
+        "b": "Segment by behavior",
+        "s": "What they bet, how often, at what odds."
       },
       {
-        "b": "Test before trusting",
-        "s": "A control group wherever the numbers allow."
+        "b": "Check claims against records",
+        "s": "What was reported vs what happened."
       },
       {
-        "b": "Prove it beats the old way",
-        "s": "Or it doesn't go live."
+        "b": "Hand over an action",
+        "s": "A limit, a rule or a flag the team can use."
       }
     ],
     "stats": [
       {
-        "v": "PHP 10M",
-        "k": "saved on promotions in one month"
-      },
-      {
-        "v": "28x",
-        "k": "an agency's cost per new customer vs ad networks"
-      },
-      {
-        "v": "83%",
-        "k": "of revenue from the top 10% my model picks"
-      },
-      {
-        "v": "+8pp",
-        "k": "casino VIP retention after targeted calls"
+        "v": "64%",
+        "k": "of a league's loss traced to 2.6% of accounts"
       },
       {
         "v": "137x",
-        "k": "partner overpayment, fixed"
+        "k": "partner over-crediting caught"
+      },
+      {
+        "v": "3.5x",
+        "k": "campaign ROI after filtering bonus abusers"
+      },
+      {
+        "v": "2.2x",
+        "k": "over-budget risk caught before launch"
+      },
+      {
+        "v": "2.2M",
+        "k": "transactions a week in the risk feed"
       }
     ],
     "map": [
       {
-        "b": "CRM A/B testing",
-        "s": "Designed and built the test"
+        "b": "Sharp betting",
+        "s": "Who was beating a league"
       },
       {
-        "b": "Marketing channels",
-        "s": "Which are worth the money"
+        "b": "Partner over-crediting",
+        "s": "Claims vs records"
       },
       {
-        "b": "Customer value",
-        "s": "Who will be worth the most"
+        "b": "Bonus abuse",
+        "s": "Flags and filters"
       },
       {
-        "b": "Budget planning",
-        "s": "Catching overspend early"
+        "b": "Pre-launch check",
+        "s": "Rules players could work"
       },
       {
-        "b": "Partner payments",
-        "s": "Paying only for real referrals"
-      },
-      {
-        "b": "VIP retention",
-        "s": "Who to call this week"
+        "b": "Risk data feed",
+        "s": "Weekly, automatic"
       }
     ]
   },
   "cases": [
     {
-      "area": "CRM A/B testing · DigiPlus (ArenaPlus) · 2026",
-      "title": "I designed and built the A/B test every CRM campaign runs on",
-      "question": "Reports compared promo users with non-users, so every campaign looked like a win.",
+      "area": "Sharp betting · DigiPlus (ArenaPlus) · 2026",
+      "title": "A few accounts were taking a basketball league apart",
+      "question": "IPBL Pro, a 24/7 basketball league on our sportsbook, turned loss-making in July. Nobody knew why.",
       "did": [
-        "Designed a 10% control group, stratified so both groups start alike, and built it into every campaign send. Lift is measured at day 7 and day 30."
+        "Split bettors by behavior: league-only vs multi-sport, new vs existing, stake, odds, market and win rate.",
+        "Traced the losses to a small group working live two-way markets (Total and Handicap, mostly alternative lines)."
       ],
-      "decision": "Every campaign is now judged on its real lift. Within one month, from late 2025 into January 2026, promo spend fell from over 10% to about 5% of revenue, saving about PHP 10M.",
-      "flow": [
-        [
-          "Customers",
-          "eligible"
-        ],
-        [
-          "Random split",
-          "90 / 10"
-        ],
-        [
-          "Send",
-          "promotion"
-        ],
-        [
-          "Compare",
-          "day 7 and 30"
-        ],
-        [
-          "Move budget",
-          "to what works"
-        ]
-      ],
-      "value": "PHP 10M",
-      "valueLabel": "saved on promotions in one month.",
+      "decision": "Flagged the accounts to the risk team with limit and margin recommendations.",
+      "value": "64%",
+      "valueLabel": "of the July loss came from 2.6% of accounts.",
       "charts": [
         {
           "type": "timeline",
           "wide": true,
-          "cap": "How the test works",
+          "cap": "How I traced it",
           "steps": [
             [
-              "Stratify",
-              "Group players by value and activity"
+              "Segment",
+              "Bettors by sport mix, tenure, stake and odds"
             ],
             [
-              "Split",
-              "Random 10% control in each group"
+              "Compare",
+              "Win rate and margin by group and market"
             ],
             [
-              "Send",
-              "Only the other 90% get the campaign"
+              "Trace",
+              "Loss by account, top 50 first"
             ],
             [
-              "Measure",
-              "Lift = campaign group minus control, day 7 and 30"
+              "Flag",
+              "Accounts and markets to the risk team"
             ]
           ]
         },
         {
-          "type": "waffle",
-          "cap": "Every send keeps 10 in 100 players as a control",
-          "sub": "Stratified, so both groups start alike",
-          "on": 10,
-          "legend": [
-            [
-              "warn",
-              "Control (no campaign)"
-            ],
-            [
-              "ground",
-              "Gets the campaign"
-            ]
-          ]
-        },
-        {
-          "type": "diverge",
-          "cap": "My first method made a working promotion look like a loss",
-          "sub": "Extra customers back within 7 days (percentage points)",
-          "max": 16,
+          "type": "bars",
+          "cap": "Customer win rate kept climbing",
+          "sub": "IPBL Pro, customer win rate by month",
+          "max": 40,
           "rows": [
             [
-              "Wrong method",
-              -15.6,
-              "-15.6",
+              "March",
+              29,
+              "29%",
+              ""
+            ],
+            [
+              "June",
+              35,
+              "35%",
+              ""
+            ],
+            [
+              "July",
+              38,
+              "38%",
               "w"
-            ],
-            [
-              "Right method",
-              3.6,
-              "+3.6",
-              "hi"
-            ]
-          ]
-        },
-        {
-          "type": "bars",
-          "cap": "A simple comparison made one bonus look twice as good as it was",
-          "sub": "Return per peso spent on a slot bonus",
-          "max": 3,
-          "rows": [
-            [
-              "Simple comparison",
-              2.98,
-              "2.98x",
-              "w"
-            ],
-            [
-              "Fair test",
-              1.34,
-              "1.34x",
-              "hi"
-            ]
-          ]
-        },
-        {
-          "type": "bars",
-          "wide": true,
-          "cap": "Promotions bring back light players, not heavy ones",
-          "sub": "Extra return rate, by days played before the promotion (percentage points)",
-          "max": 25,
-          "rows": [
-            [
-              "1-3 days",
-              25,
-              "+25.0",
-              "hi"
-            ],
-            [
-              "4-9 days",
-              9.4,
-              "+9.4",
-              ""
-            ],
-            [
-              "10-19 days",
-              2.7,
-              "+2.7",
-              ""
-            ],
-            [
-              "20+ days",
-              0,
-              "-0.2",
-              ""
-            ]
-          ]
-        }
-      ],
-      "note": ""
-    },
-    {
-      "area": "Marketing channels · DigiPlus (ArenaPlus) · 2026",
-      "title": "One agency cost 28x more per customer. I proposed cutting it.",
-      "question": "Nobody had checked what our agency's customers cost against what they spent.",
-      "did": [
-        "Compared every ad channel's cost per paying customer with their 3-month revenue."
-      ],
-      "decision": "I recommended dropping the agency and moving the money to channels that make a profit.",
-      "flow": [
-        [
-          "Promo codes",
-          "177 codes"
-        ],
-        [
-          "Customers",
-          "matched one by one"
-        ],
-        [
-          "3-month revenue",
-          "after bonuses"
-        ],
-        [
-          "Cost",
-          "matched to finance"
-        ],
-        [
-          "Compare",
-          "every channel"
-        ]
-      ],
-      "value": "28x",
-      "valueLabel": "what the agency cost per paying customer, compared with ad networks.",
-      "charts": [
-        {
-          "type": "timeline",
-          "wide": true,
-          "cap": "How I checked it",
-          "steps": [
-            [
-              "Match",
-              "177 promo codes matched to customers one by one"
-            ],
-            [
-              "Value",
-              "3-month revenue per customer, after bonuses"
-            ],
-            [
-              "Cost",
-              "Matched to the marketing team's cost sheet"
-            ],
-            [
-              "Recommend",
-              "Drop the agency, move the money"
-            ]
-          ]
-        },
-        {
-          "type": "bars",
-          "cap": "The agency cost 28 times more to get one paying customer",
-          "sub": "Cost per new paying customer (ad networks = 1)",
-          "max": 28,
-          "rows": [
-            [
-              "Agency",
-              28,
-              "28x",
-              "w"
-            ],
-            [
-              "Paid social",
-              14,
-              "14x",
-              ""
-            ],
-            [
-              "Paid search",
-              13,
-              "13x",
-              ""
-            ],
-            [
-              "Ad networks",
-              1,
-              "1x",
-              "hi"
-            ]
-          ]
-        },
-        {
-          "type": "bars",
-          "cap": "...but its customers spent about the same as ad-network customers",
-          "sub": "Revenue per customer in the first 3 months (ad networks = 1)",
-          "max": 2.2,
-          "rows": [
-            [
-              "Paid social",
-              2.2,
-              "2.2x",
-              ""
-            ],
-            [
-              "Agency",
-              1,
-              "1.0x",
-              "w"
-            ],
-            [
-              "Ad networks",
-              1,
-              "1.0x",
-              "hi"
-            ],
-            [
-              "Paid search",
-              0.7,
-              "0.7x",
-              ""
-            ]
-          ]
-        },
-        {
-          "type": "waffle",
-          "wide": true,
-          "cap": "Only 2 of every 100 pesos spent on the agency came back",
-          "on": 2,
-          "sub": "Revenue from its customers within 3 months",
-          "legend": [
-            [
-              "warn",
-              "Came back within 3 months"
-            ],
-            [
-              "ground",
-              "Not recovered"
-            ]
-          ]
-        }
-      ],
-      "note": ""
-    },
-    {
-      "area": "Customer value · DigiPlus (ArenaPlus) · 2026",
-      "title": "A model that finds the customers worth spending on",
-      "question": "Budgets were planned on averages.",
-      "did": [
-        "Built a model that predicts each customer's spend for the next year, tested on 12 past months."
-      ],
-      "decision": "Its top 10% bring in 83% of revenue. Scores update every week and feed budget planning.",
-      "flow": [
-        [
-          "Snapshot",
-          "33 month-ends"
-        ],
-        [
-          "Model",
-          "gradient boosting"
-        ],
-        [
-          "Backtest",
-          "12 past months"
-        ],
-        [
-          "Check",
-          "error within limits"
-        ],
-        [
-          "Use",
-          "budgets, targeting"
-        ]
-      ],
-      "value": "83%",
-      "valueLabel": "of revenue comes from the 10% of customers the model ranks highest.",
-      "charts": [
-        {
-          "type": "timeline",
-          "wide": true,
-          "cap": "How I built and tested it",
-          "steps": [
-            [
-              "Data",
-              "33 month-end snapshots of customer activity"
-            ],
-            [
-              "Train",
-              "Gradient boosting on the older months"
-            ],
-            [
-              "Backtest",
-              "Checked on 12 newer months it never saw"
-            ],
-            [
-              "Use",
-              "Weekly scores feed budget planning"
-            ]
-          ]
-        },
-        {
-          "type": "curve",
-          "wide": true,
-          "cap": "Almost half of a new customer's 3-month revenue comes after the first month",
-          "sub": "Share of 90-day revenue, by day since joining"
-        },
-        {
-          "type": "bars",
-          "cap": "The model's top 10% bring in 83% of revenue",
-          "sub": "Share of total revenue from the top 10% each method picks",
-          "max": 1,
-          "rows": [
-            [
-              "New model",
-              0.834,
-              "83%",
-              "hi"
-            ],
-            [
-              "Old method",
-              0.579,
-              "58%",
-              ""
-            ]
-          ]
-        },
-        {
-          "type": "bars",
-          "cap": "Its prediction error is less than half the old method's",
-          "sub": "Old method = 100, lower is better",
-          "max": 100,
-          "rows": [
-            [
-              "Old method",
-              100,
-              "100",
-              ""
-            ],
-            [
-              "New model",
-              42,
-              "42",
-              "hi"
-            ]
-          ]
-        }
-      ],
-      "note": ""
-    },
-    {
-      "area": "Budget planning · DigiPlus (ArenaPlus) · 2026",
-      "title": "Caught a 2.2x overspend before launch",
-      "question": "New promotion plans went live without anyone checking the real cost.",
-      "did": [
-        "Ran each plan on past customer data before launch."
-      ],
-      "decision": "A reward wheel would have cost 2.2 times its budget. We fixed it before it went live.",
-      "flow": [
-        [
-          "Plan",
-          "as written"
-        ],
-        [
-          "Replay",
-          "on past data"
-        ],
-        [
-          "Rules",
-          "risk, VIP, caps"
-        ],
-        [
-          "Cost",
-          "per send, per month"
-        ],
-        [
-          "Adjust",
-          "to budget"
-        ]
-      ],
-      "value": "2.2x",
-      "valueLabel": "its budget, caught before launch.",
-      "charts": [
-        {
-          "type": "timeline",
-          "wide": true,
-          "cap": "How a plan is checked before launch",
-          "steps": [
-            [
-              "Plan",
-              "Promotion rules as written"
-            ],
-            [
-              "Replay",
-              "Run on past customer data"
-            ],
-            [
-              "Price",
-              "Cost per send and per month"
-            ],
-            [
-              "Fix",
-              "Change conditions until it fits"
-            ]
-          ]
-        },
-        {
-          "type": "bars",
-          "cap": "Over half of recent players come back with no promotion at all",
-          "sub": "Return within 7 days, by days since last bet",
-          "max": 60,
-          "rows": [
-            [
-              "Last bet ≤7 days ago",
-              57.4,
-              "57.4%",
-              "hi"
-            ],
-            [
-              "8-28 days",
-              17.8,
-              "17.8%",
-              ""
-            ],
-            [
-              "29-89 days",
-              4.5,
-              "4.5%",
-              ""
-            ],
-            [
-              "90-180 days",
-              1,
-              "1.0%",
-              ""
-            ]
-          ]
-        },
-        {
-          "type": "budget",
-          "cap": "The reward wheel would have cost 2.2 times its budget",
-          "sub": "Black line = budget",
-          "rows": [
-            [
-              "Plan as written",
-              2.2,
-              "2.2x",
-              "w"
-            ],
-            [
-              "After 8 changes",
-              1,
-              "1.0x",
-              "hi"
             ]
           ]
         },
         {
           "type": "split",
-          "wide": true,
-          "cap": "One promotion type took half the sports budget",
+          "cap": "2.6% of accounts drove 64% of the July loss",
+          "sub": "Share of the league's July loss",
           "a": [
-            "Cross-sell",
-            51
+            "2.6% of accounts",
+            64
           ],
           "b": [
-            "Everything else",
-            49
+            "Everyone else",
+            36
+          ]
+        },
+        {
+          "type": "diverge",
+          "cap": "League-only bettors beat the book, everyone else did not",
+          "sub": "Company margin by player group",
+          "max": 30,
+          "rows": [
+            [
+              "League-only bettors (1.9%)",
+              -26.9,
+              "-26.9%",
+              "w"
+            ],
+            [
+              "Multi-sport bettors (98%)",
+              6.3,
+              "+6.3%",
+              "hi"
+            ]
+          ]
+        },
+        {
+          "type": "bars",
+          "cap": "They picked near-even odds",
+          "sub": "Average odds taken",
+          "max": 4,
+          "rows": [
+            [
+              "On this league",
+              1.92,
+              "1.92",
+              "w"
+            ],
+            [
+              "On other sports",
+              3.8,
+              "3.80",
+              ""
+            ]
           ]
         }
       ],
       "note": ""
     },
     {
-      "area": "Partner payments · DigiPlus (ArenaPlus) · 2026",
-      "title": "We were paying a partner for 137x too many customers",
-      "question": "LiveMatch, our streaming partner, is paid for the customers it sends. Counts varied by up to 20x.",
+      "area": "Partner over-crediting · DigiPlus (ArenaPlus) · 2026",
+      "title": "A partner was credited for 137x the players it sent",
+      "question": "LiveMatch, our live-streaming partner, is paid for each new player it refers. Its monthly counts swung by up to 20x.",
       "did": [
-        "Checked the payments against each customer's history and priced four payment rules."
+        "Checked every credited player against our own sign-up and deposit records, then priced four counting rules."
       ],
-      "decision": "We now pay only for customers who deposit within 7 days of a LiveMatch click.",
+      "decision": "The company adopted my rule: pay only for new players who deposit within 7 days of a LiveMatch click.",
       "flow": [
         [
           "Clicks",
@@ -852,124 +459,21 @@ svg .lab { fill: var(--ink); font-weight: 600 }
       "note": ""
     },
     {
-      "area": "VIP retention · DigiPlus (ArenaPlus) · 2026",
-      "title": "Phone calls lifted casino VIP retention 8 points",
-      "question": "Account managers didn't know which VIPs to call.",
+      "area": "Bonus abuse · GGPoker and ArenaPlus · 2024-2026",
+      "title": "Filtering out bonus abusers made campaigns pay",
+      "question": "Some players joined tournament campaigns only to collect the free rewards, then left.",
       "did": [
-        "Built a weekly at-risk list from a model plus the team's rule. Account managers called the VIPs on it."
+        "At GGPoker, found the reward-only players and removed them from campaign targets.",
+        "At ArenaPlus, built bonus-abuse flags into our player 360 view."
       ],
-      "decision": "Casino VIP retention rose 8 points a month later. VIPs are too few for a control group, so I compared retention before and after. Sports barely moved, because the season matters more than a call.",
-      "flow": [
-        [
-          "Monday",
-          "VIP snapshot"
-        ],
-        [
-          "Score",
-          "model + rule"
-        ],
-        [
-          "List",
-          "ranked A / B / C"
-        ],
-        [
-          "Call",
-          "account managers"
-        ],
-        [
-          "Check",
-          "5 weeks later"
-        ]
-      ],
-      "value": "+8pp",
-      "valueLabel": "casino VIP retention one month after the calls started.",
+      "decision": "Tournament campaign ROI rose from 2.3x to 3.5x within a month.",
+      "value": "3.5x",
+      "valueLabel": "tournament campaign ROI after filtering, up from 2.3x.",
       "charts": [
         {
-          "type": "timeline",
-          "wide": true,
-          "cap": "How the test ran",
-          "steps": [
-            [
-              "Week 1",
-              "Model scores every VIP and ranks them A / B / C"
-            ],
-            [
-              "Weeks 1-4",
-              "Account managers call the A list first"
-            ],
-            [
-              "Month 1",
-              "Compare retention before and after"
-            ],
-            [
-              "Result",
-              "Casino +8pp. Sports unclear"
-            ]
-          ]
-        },
-        {
           "type": "bars",
-          "cap": "Casino VIP retention rose 8 points after the calls",
-          "sub": "Retention before vs one month after the calls. No control group: VIPs are too few",
-          "max": 10,
-          "rows": [
-            [
-              "Casino VIPs",
-              8,
-              "+8pp",
-              "hi"
-            ],
-            [
-              "Sports VIPs",
-              0.3,
-              "unclear",
-              ""
-            ]
-          ]
-        },
-        {
-          "type": "bars",
-          "cap": "The model beat the old rule by only 3 points, so the rule stayed",
-          "sub": "Leaving VIPs caught in the top 10%. Line = the bar the model had to clear",
-          "max": 70,
-          "markAt": 65.5,
-          "rows": [
-            [
-              "Gradient boosting",
-              63.7,
-              "63.7%",
-              ""
-            ],
-            [
-              "Logistic regression",
-              62.1,
-              "62.1%",
-              ""
-            ],
-            [
-              "Simple rule (used)",
-              60.5,
-              "60.5%",
-              "hi"
-            ]
-          ]
-        }
-      ],
-      "note": ""
-    }
-  ],
-  "earlier": {
-    "eyebrow": "Before ArenaPlus",
-    "title": "Earlier work",
-    "items": [
-      {
-        "m": "GGPoker (NSUSLAB Korea) · 2023-2025",
-        "t": "Personalized campaigns for a global poker site",
-        "p": "Planned and ran personalized campaigns and measured every one. Revenue grew 25% and campaign return more than doubled.",
-        "chart": {
-          "type": "bars",
-          "cap": "Tournament campaign return",
-          "sub": "Before vs after removing reward-only players",
+          "cap": "Campaign ROI before and after the filter",
+          "sub": "GGPoker tournament campaigns",
           "max": 3.5,
           "rows": [
             [
@@ -985,55 +489,199 @@ svg .lab { fill: var(--ink); font-weight: 600 }
               "hi"
             ]
           ]
+        },
+        {
+          "type": "list",
+          "cap": "The flags in the player 360 view",
+          "items": [
+            "Bonus heavy: 90-day bonus above 1.5x the player's GGR",
+            "Bonus abuser: winning player whose bonus is 70%+ of stake",
+            "Consistent drainer: winning player with 20+ bets",
+            "Lucky winner: winning player with fewer than 10 bets"
+          ]
         }
-      },
-      {
-        "m": "Echo Marketing · 2015 · Search ads",
-        "t": "Bidding when Naver hid ad rankings",
-        "p": "Built a model to set search-ad bids. Cost per new customer fell 8% in the trial.",
-        "chart": {
-          "type": "bars",
-          "cap": "Cost per new customer",
-          "sub": "Before = 100",
-          "max": 100,
-          "rows": [
+      ],
+      "note": ""
+    },
+    {
+      "area": "Pre-launch check · DigiPlus (ArenaPlus) · 2026",
+      "title": "A reward wheel would have cost 2.2x its budget",
+      "question": "New promotions went live without anyone checking how players could actually work the rules.",
+      "did": [
+        "Replayed the wheel's rules on past player data before launch and priced every condition."
+      ],
+      "decision": "We changed 8 conditions so the wheel fits its budget before it went live.",
+      "flow": [
+        [
+          "Plan",
+          "as written"
+        ],
+        [
+          "Replay",
+          "on past data"
+        ],
+        [
+          "Rules",
+          "risk, VIP, caps"
+        ],
+        [
+          "Cost",
+          "per send, per month"
+        ],
+        [
+          "Adjust",
+          "to budget"
+        ]
+      ],
+      "value": "2.2x",
+      "valueLabel": "its budget, caught before launch.",
+      "charts": [
+        {
+          "type": "timeline",
+          "wide": true,
+          "cap": "How a plan is checked before launch",
+          "steps": [
             [
-              "Before",
-              100,
-              "100",
-              ""
+              "Plan",
+              "Promotion rules as written"
             ],
             [
-              "With the model",
-              92,
-              "92",
+              "Replay",
+              "Run on past customer data"
+            ],
+            [
+              "Price",
+              "Cost per send and per month"
+            ],
+            [
+              "Fix",
+              "Change conditions until it fits"
+            ]
+          ]
+        },
+        {
+          "type": "budget",
+          "cap": "The reward wheel would have cost 2.2 times its budget",
+          "sub": "Black line = budget",
+          "rows": [
+            [
+              "Plan as written",
+              2.2,
+              "2.2x",
+              "w"
+            ],
+            [
+              "After 8 changes",
+              1,
+              "1.0x",
               "hi"
             ]
           ]
         }
+      ],
+      "note": ""
+    },
+    {
+      "area": "Risk data feed · DigiPlus (ArenaPlus) · 2026",
+      "title": "The risk team gets its data every week without asking",
+      "question": "The risk team pulled transaction, bonus and player data by hand for each review.",
+      "did": [
+        "Built a weekly job that extracts three files for every active player, adds monthly roll-ups, and posts them to the risk team's Lark chat."
+      ],
+      "decision": "About 2.2M transactions, 140K promotion redemptions and risk KPIs for 310K players now arrive each week.",
+      "value": "2.2M",
+      "valueLabel": "transactions a week in the feed.",
+      "charts": [
+        {
+          "type": "timeline",
+          "wide": true,
+          "cap": "How the feed runs",
+          "steps": [
+            [
+              "Extract",
+              "Bets, deposits, withdrawals, redemptions"
+            ],
+            [
+              "Join",
+              "Per player, period and lifetime"
+            ],
+            [
+              "Package",
+              "Three files, weekly and monthly"
+            ],
+            [
+              "Deliver",
+              "Posted to the risk team's Lark chat"
+            ]
+          ]
+        },
+        {
+          "type": "bars",
+          "wide": true,
+          "cap": "What goes out each week",
+          "sub": "Rows per file, one sample week",
+          "max": 2300000,
+          "rows": [
+            [
+              "Transactions",
+              2242546,
+              "2.24M",
+              "hi"
+            ],
+            [
+              "Player risk KPIs",
+              310101,
+              "310K",
+              ""
+            ],
+            [
+              "Promotion redemptions",
+              139974,
+              "140K",
+              ""
+            ]
+          ]
+        }
+      ],
+      "note": ""
+    }
+  ],
+  "earlier": {
+    "eyebrow": "Before ArenaPlus",
+    "title": "Earlier work",
+    "items": [
+      {
+        "m": "Korea Institute for Defense Analyses · 2020-2023",
+        "t": "Reading state media for warning signs",
+        "p": "Built a text-mining model on North Korean state media that called provocations with 80% accuracy. Published an SSCI paper on Korea's Defense Innovation 4.0 plan."
+      },
+      {
+        "m": "GGPoker (NSUSLAB Korea) · 2023-2025",
+        "t": "Alerts on a global poker platform",
+        "p": "Set alerts for any daily revenue swing over 10%, and automated a 3-4 day monthly campaign report so it updates daily."
       },
       {
         "m": "KAIST · M.S. Management Engineering",
-        "t": "How customers move toward a purchase",
-        "p": "Thesis on the order of channels customers use before buying. GPA 3.94/4.3."
+        "t": "Sequences in customer behavior",
+        "p": "Thesis on sequential pattern mining of customer paths. GPA 3.94/4.3."
       }
     ],
     "tools": [
       {
         "l": "Data",
-        "p": "SQL, MaxCompute, Snowflake, DuckDB"
+        "p": "SQL, MaxCompute, Snowflake"
       },
       {
-        "l": "Modeling",
-        "p": "Python, scikit-learn, gradient boosting, scipy, pytest"
+        "l": "Analysis",
+        "p": "Python, pandas, scikit-learn, gradient boosting"
       },
       {
-        "l": "Measurement",
-        "p": "Holdouts, diff-in-diff, triple difference, backtests"
+        "l": "Detection",
+        "p": "Behavior segmentation, rule-based flags, metric alerts"
       },
       {
-        "l": "BI and tools",
-        "p": "Tableau, Quick BI, Dash, Sheets, Claude Code"
+        "l": "Reporting and tools",
+        "p": "Tableau, Streamlit, Dash, Lark bots, Claude Code"
       }
     ]
   }
@@ -1181,4 +829,6 @@ svg .lab { fill: var(--ink); font-weight: 600 }
   render();
 })();
 </script>
-</body></html>
+
+</body>
+</html>
